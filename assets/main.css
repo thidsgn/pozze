@@ -152,11 +152,10 @@ body {
 }
 
 .sl-elements-background {
-  background:url(images/sl-background-coqueiro.png) no-repeat center;
+  background:url(images/sl-background-coqueiro.png) no-repeat top center;
   height: 200px;
   width: 100%;
   margin: 50px 0;
-  background-size: contain;
   background-attachment: fixed;
 
   
