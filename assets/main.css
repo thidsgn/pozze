@@ -49,7 +49,7 @@ body {
 
 .sl-header {
   width:100%;
-  height:40vh;
+  height:320px;
   background:url(images/sl-background-header.png) no-repeat center top;
   background-size: 150%;
   position:relative;
@@ -96,7 +96,7 @@ body {
   height:30px;
 
   position:relative;
-  top:150px;
+  top:110px;
   left:105px;
 }
 
