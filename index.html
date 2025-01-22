@@ -58,13 +58,13 @@
 
     </div>
 
-    
+  
 
-    <div class="sl-elements">
-        <div class="sl-elements-background">
-            <!-- <img src="/assets/images/sl-background-coqueiro.png" alt=""> -->
-        </div>
+    <div class="parallax-section section-1">
+      <div class="parallax-bg"></div>
+      <!-- <div class="content">Parallax Mobile</div> -->
     </div>
+
 
     <div class="sl-section">
         <h2 class="sl-section-title crimson-pro-italic"><span class="crimson-pro-italic-bold">Cores que contam uma história</span></h2>
@@ -175,7 +175,37 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
-
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const parallaxEffect = () => {
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+          $('.parallax-bg').each(function () {
+            const sectionTop = $(this).closest('.parallax-section').offset().top;
+            const sectionHeight = $(this).closest('.parallax-section').outerHeight();
+            const speed = 0.5; // Controle da velocidade do efeito
+    
+            if (scrollTop + window.innerHeight > sectionTop && scrollTop < sectionTop + sectionHeight) {
+              const yPos = (scrollTop - sectionTop) * speed;
+              $(this).css('transform', `translateY(${yPos}px)`);
+            }
+          });
+        };
+    
+        // Listener de rolagem com debounce para melhor desempenho
+        let timeout;
+        $(window).on('scroll', function () {
+          clearTimeout(timeout);
+          timeout = setTimeout(parallaxEffect, 10); // Debounce
+        });
+    
+        // Chamando a função no carregamento inicial
+        parallaxEffect();
+      });
+    </script>
+    
 
     <script>
  const elements = document.querySelectorAll('.rotating-element');
