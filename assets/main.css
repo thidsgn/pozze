@@ -4,7 +4,8 @@ body {
   background-color:#F6EDE6;
 }
 
-.sl-wrapper-w {
+.sl-wrapper-w,
+.sl-wrapper-full {
   max-width:630px;
   margin: 0 auto;
 }
@@ -419,4 +420,75 @@ body, html {
 }
 .section-2 .parallax-bg {
   background-image: url(images/sl-background-coqueiro.png);
+}
+
+
+.sl-fixed-nav {
+  position: fixed;
+  left:10px;
+  top: 10px;
+  width: 95%;
+  z-index: 9999;
+  background-color: #FFFFFF;
+  border-radius:200px;
+  margin:0 auto;
+}
+
+.sl-fixed-nav .btn-vip {
+  background: url(images/sl-icon-locker.svg) no-repeat 18px center #dcb4b4;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  padding: 15px 25px 15px 45px;
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sl-fixed-nav .btn-vip:hover {
+  background-color: #c99a9a;
+}
+
+.sl-fixed-nav .brand-logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right:20px;
+}
+
+.sl-fixed-nav .btn-vip i {
+  font-size: 1.2rem;
+}
+
+
+.sl-social {
+  border:2px solid #F6EAE3;
+  border-radius:100px;
+  padding:1em;
+  font-size:1em;
+  text-align: center;
+  color:#F6EAE3;
+  text-decoration: none;
+
+}
+
+
+.sl-social.whatsapp {
+  background:url(images/sl-icon-whatsapp.svg) no-repeat 20px center;
+  padding-left:55px;
+}
+
+.sl-social.instagram {
+  background:url(images/sl-icon-instagram.svg) no-repeat 20px center;
+  padding-left:55px;
+}
+
+.sl-footer-site-link a {
+  color:#F6EAE3;
+  margin:20px;
+  display:inline-block;
+  font-size:1.3em;
 }
