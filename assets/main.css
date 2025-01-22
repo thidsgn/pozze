@@ -4,6 +4,10 @@ body {
   background-color:#F6EDE6;
 }
 
+.sl-wrapper-w {
+  max-width:630px;
+  margin: 0 auto;
+}
 .sl-section p {
   color:#4C423A;
   opacity:0.8;
@@ -234,9 +238,6 @@ p {
 }
 
 
-.sl-section-card-benefits {
-  background-color: #f8f1ec; /* Fundo da seção */
-}
 
 .sl-section-card-benefits__card {
   background-color: #4C423A; /* Cor do card */
