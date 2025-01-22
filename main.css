@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body {
+  background-color:#F6EDE6;
+}
+
+.sl-wrapper-w {
+  max-width:630px;
+  margin: 0 auto;
+}
+.sl-section p {
+  color:#4C423A;
+  opacity:0.8;
+}
+
+.signature-container {
+  width: 100%;
+  max-width: 800px; /* Ajuste para o tamanho desejado */
+  overflow: hidden;
+  position: relative;
+}
+
+
+.crimson-pro-italic-100 {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: italic;
+  font-size:1.5em;
+  line-height:1.3em;
+}
+
+
+.crimson-pro-italic {
+  font-family: "Crimson Pro", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.crimson-pro-italic-bold {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.main-wrapper-400 {
+    max-width: 393px;
+    margin:0 auto;
+}
+
+
+.sl-header {
+  width:100%;
+  height:320px;
+  background:url(images/sl-background-header.png) no-repeat center top;
+  background-size: 150%;
+  position:relative;
+  overflow:hidden;
+  animation: moveBackground 10s linear infinite;
+}
+
+/* Animação para mover o background */
+@keyframes moveBackground {
+  0% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+.sl-logo-collection {
+  background:url(images/sl-text-colecao.png) no-repeat center;
+  width:250px;
+  height:20px;
+  background-size:contain;
+  text-indent:-999999px;
+  margin-bottom:10px;
+
+  
+}
+
+
+
+.sl-logo-collection-solare {
+  background:url(images/sl-text-solare.png) no-repeat;
+  background-size:contain;
+  text-indent:-999999px;
+  width:250px;
+  height:100px;
+}
+
+.sl-logo-pozze {
+  background:url(images/sl-logo-pozze1.png) no-repeat;
+  background-size:contain;
+  text-indent:-999999px;
+  width:80px;
+  height:30px;
+
+  position:relative;
+  top:110px;
+  left:105px;
+}
+
+.sl-logo-collection-wrapper {
+  position:relative;
+  top:100px;
+  left:30px;
+}
+
+.sl-signature {
+  width:100%;
+  overflow:hidden;
+}
+
+.sl-signature img {
+  width:900px;
+}
+
+.sl-video-wrapper {
+  padding:5px;
+
+  background: #D5C8BF;
+  width:100%;
+  border-radius:50px;
+  padding:20px;
+}
+
+
+
+.sl-section {
+  text-align:center;
+}
+
+.sl-section-title {
+  font-size:2.2em;
+  color:#4C423A;
+  line-height:1em;
+  margin:30px;
+}
+
+
+.sl-button {
+  display:inline-block;
+  background: #4C423A;
+  color:#D5C8BF;
+  text-align: center;
+  padding:5px 20px;
+  font-size:1.4em;
+  border-radius:100px;
+  text-decoration: none;
+  margin:20px;
+
+}
+
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+/* .sl-elements-background {
+  background:url(images/sl-background-coqueiro.png) center;
+  height: 200px;
+  width: 100%;
+  margin: 50px 0;
+  
+} */
+
+.sl-colors-cards {
+  background:#fff;
+}
+
+.sl-colors-cards {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: transform 0.3s ease;
+}
+
+.sl-colors-cards:hover {
+  transform: translateY(-5px);
+}
+
+.sl-colors-cards--item {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.sl-color-perla {
+  background-color: #D68B8B; /* Cor para Perla */
+}
+
+.sl-color-castanho {
+  background-color: #4F3A33; /* Cor para Castanho */
+}
+
+.sl-color-luna {
+  background-color: #DCDACD; /* Cor para Luna */
+}
+
+.sl-color-preto {
+  background-color: #000000; /* Cor para Preto */
+}
+
+p {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.sl-colors-cards-name {
+  font-size:1.1em;
+  color:#4C423A;
+  line-height:1.11em;
+}
+
+.sl-col-3 {
+  margin:0;
+  padding:5px;
+}
+/* Estilização responsiva */
+@media (max-width: 768px) {
+  .sl-colors-cards {
+    margin: 0 auto;
+    padding: 10px;
+  }
+}
+
+.sl-section-primary-background {
+  background: #D5C8BF;
+  border-radius:40px;
+  padding:1.5em;
+}
+
+
+
+.sl-section-card-benefits__card {
+  background-color: #4C423A; /* Cor do card */
+  border-radius: 50px;
+  padding: 24px;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sl-section-card-benefits__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sl-section-card-benefits__icon {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.sl-section-card-benefits__icon img {
+  width:80px;
+}
+
+.sl-section-card-benefits__title {
+  font-size: 1.8em;
+  margin-bottom: 8px;
+}
+
+.sl-section-card-benefits__text {
+  font-size: 1.3em;
+  line-height: 1.3;
+  opacity:.8;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .sl-section-card-benefits__card {
+    padding: 16px;
+  }
+
+  .sl-section-card-benefits__icon {
+    font-size: 32px;
+  }
+}
+
+
+/* Efeito de raio de sol */
+.sun-flash {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  transform: rotate(45deg) scale(0.5);
+  animation: sunFlashEffect 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Animação de flash */
+@keyframes sunFlashEffect {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: rotate(45deg) scale(1.5);
+  }
+  40% {
+    opacity: 0.5;
+    transform: rotate(45deg) scale(2);
+  }
+  60% {
+    opacity: 0;
+    transform: rotate(45deg) scale(2.5);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) scale(3);
+  }
+}
+
+.rotating-element-1 {
+  transform: rotate(0deg);
+}
+
+.rotating-element-2 {
+  transform-origin: center;
+  transform: rotate(0deg);
+  transition: transform 0.1s linear;
+}
+
+.sl-video-player {
+  position: relative;
+  width: 100%;
+  height:600px;
+  background: #fff;
+  width:100%;
+  border-radius:50px;
+
+  overflow:hidden;
+}
+
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  z-index: 2;
+}
+.hidden {
+  display: none;
+}
+
+.sl-footer {
+  background:#4C423A;
+  padding:2em;
+  margin:10px 0 0;
+  width:100%;
+}
+
+.sl-footer-logo {
+  margin:0 auto;
+  text-align:center;
+}
+
+.sl-footer-logo img {
+  width:150px;
+  margin:0 auto;
+}
+
+
+
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.parallax-section {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px; /* Maior para criar o efeito */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.1s linear; /* Suavidade no movimento */
+}
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.section-1 .parallax-bg {
+  background-image: url(images/sl-background-coqueiro.png);
+}
+.section-2 .parallax-bg {
+  background-image: url(images/sl-background-coqueiro.png);
+}
+
+
+.sl-fixed-nav {
+  position: fixed;
+  left:10px;
+  top: 10px;
+  width: 95%;
+  z-index: 9999;
+  background-color: #FFFFFF;
+  border-radius:200px;
+}
+
+.sl-fixed-nav .btn-vip {
+  background: url(images/sl-icon-locker.svg) no-repeat 18px center #dcb4b4;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  padding: 15px 25px 15px 45px;
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sl-fixed-nav .btn-vip:hover {
+  background-color: #c99a9a;
+}
+
+.sl-fixed-nav .brand-logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right:20px;
+}
+
+.sl-fixed-nav .btn-vip i {
+  font-size: 1.2rem;
+}
+
+
+.sl-social {
+  border:2px solid #F6EAE3;
+  border-radius:100px;
+  padding:1em;
+  font-size:1em;
+  text-align: center;
+  color:#F6EAE3;
+  text-decoration: none;
+
+}
+
+
+.sl-social.whatsapp {
+  background:url(images/sl-icon-whatsapp.svg) no-repeat 20px center;
+  padding-left:55px;
+}
+
+.sl-social.instagram {
+  background:url(images/sl-icon-instagram.svg) no-repeat 20px center;
+  padding-left:55px;
+}
+
+.sl-footer-site-link a {
+  color:#F6EAE3;
+  margin:20px;
+  display:inline-block;
+  font-size:1.3em;
+}
