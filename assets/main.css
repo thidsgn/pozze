@@ -507,9 +507,24 @@ body, html {
   display: inline-block;
 }
 
-
+.sl-section-go-vip {
+  font-size:1.8em;
+  padding:0.5em;
+}
 @media (max-width: 344px) {
   .sl-colors-cards-name {
     font-size: .95em;
   }
+
+  .sl-section-go-vip {
+    font-size:1.4em;
+  }
 }
+
+@media (max-width: 375px) {
+
+  .sl-section-go-vip {
+    font-size:1.4em;
+  }
+}
+
