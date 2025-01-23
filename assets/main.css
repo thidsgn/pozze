@@ -468,22 +468,23 @@ body, html {
   border-radius:100px;
   padding:1em;
   font-size:1em;
-  text-align: center;
   color:#F6EAE3;
   text-decoration: none;
-  display:inline-blocck;
+  display:block;
+  margin-bottom:10px;
 }
 
 
 .sl-social.whatsapp {
   background:url(images/sl-icon-whatsapp.svg) no-repeat 20px center;
-  padding-left:55px;
-  margin-right:8px;
 }
 
 .sl-social.instagram {
   background:url(images/sl-icon-instagram.svg) no-repeat 20px center;
-  padding-left:55px;
+}
+
+.sl-social.pinterest {
+  background:url(images/sl-icon-pinterest.svg) no-repeat 20px center;
 }
 
 .sl-footer-site-link a {
