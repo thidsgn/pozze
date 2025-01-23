@@ -506,15 +506,22 @@ body, html {
   font-size:1.8em;
   padding:0.5em;
 }
-@media (max-width: 344px) {
+@media (max-width: 385px) {
   .sl-colors-cards-name {
-    font-size: .95em;
+    font-size: .9em;
   }
 
   .sl-section-go-vip {
     font-size:1.4em;
   }
 }
+
+@media (max-width: 350px) {
+  .sl-colors-cards-name {
+    font-size: .8em;
+  }
+}
+
 
 @media (max-width: 375px) {
 
