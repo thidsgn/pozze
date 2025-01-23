@@ -380,7 +380,7 @@ video {
 }
 
 .sl-footer-logo img {
-  margin:0 auto;
+  width:180px;
 }
 
 
@@ -496,13 +496,15 @@ body, html {
 
 .sl-header-text {
   position: relative;
-  left: 73px;
+  left: 68px;
   top: -15px;
   font-size: 1.1em;
   color: #4d433b;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1em;
   opacity: .8;
+  text-align:center;
+  display: inline-block;
 }
 
 
