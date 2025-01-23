@@ -495,7 +495,7 @@ body, html {
 
 .sl-header-text {
   position: relative;
-  left: -32px;
+  top: -31px;
 }
 
 .sl-header-text img {
