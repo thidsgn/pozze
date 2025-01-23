@@ -255,43 +255,6 @@ window.addEventListener('scroll', () => {
 
       </script>
 
-<script>
-  let isScrolling = false;
-
-  window.addEventListener('wheel', (event) => {
-    event.preventDefault(); // Impede o comportamento padrão do scroll
-    if (!isScrolling) {
-      isScrolling = true;
-      const scrollSpeed = 50; // Ajusta a velocidade do scroll
-      const scrollAmount = event.deltaY > 0 ? scrollSpeed : -scrollSpeed;
-
-      smoothScrollBy(scrollAmount, 500); // Rola suavemente
-    }
-  });
-
-  const smoothScrollBy = (amount, duration) => {
-    const startY = window.scrollY;
-    const startTime = performance.now();
-
-    const easeOutQuad = (t) => t * (2 - t); // Função de suavização
-
-    const scrollStep = (currentTime) => {
-      const elapsed = currentTime - startTime;
-      const progress = Math.min(elapsed / duration, 1); // Progresso da animação
-      const easedProgress = easeOutQuad(progress);
-
-      window.scrollTo(0, startY + amount * easedProgress);
-
-      if (progress < 1) {
-        requestAnimationFrame(scrollStep); // Continua a animação
-      } else {
-        isScrolling = false; // Libera o controle após o fim
-      }
-    };
-
-    requestAnimationFrame(scrollStep); // Inicia a animação
-  };
-</script>
       
 <script>
  document.getElementById('playButton').addEventListener('click', function () {
@@ -301,7 +264,7 @@ window.addEventListener('scroll', () => {
 
     // Define o novo vídeo
     video.innerHTML = `
-        <source src="assets/videos/video-pozze-colecao-solare.mp4" type="video/mp4">
+        <source src="assets/videos/compressed-pozze-colecao-solare.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     `;
 
