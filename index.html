@@ -258,20 +258,28 @@
         elements.forEach((element) => {
           const rect = element.getBoundingClientRect();
           const initialRotation = parseFloat(element.dataset.initialRotation); // Rotações iniciais do atributo data
-          const offset = 20; // Offset de 100px antes e depois
+          const offset = 100; // Offset de 100px antes e depois
+          const neutralZone = 0.25; // Percentual do progresso para a zona neutra (20%)
     
           // Definindo os limites do intervalo
           const startVisible = -offset; // 100px antes de o elemento entrar na tela
           const endVisible = window.innerHeight + offset; // 100px antes de o elemento sair da tela
     
           if (rect.top >= startVisible && rect.bottom <= endVisible) {
-            // Progresso ajustado para girar mais rápido no intervalo definido
+            // Progresso ajustado considerando a zona neutra
             let progress = (rect.top - startVisible) / (window.innerHeight + 2 * offset);
     
-            // Acelera a rotação para alinhar mais rápido
-            progress = Math.max(0, Math.min(1, progress)); // Mantém o progresso entre 0 e 1
-            const rotation = initialRotation * (1 - Math.pow(progress - 0.5, 2) * 10); // Rotação com aceleração ajustada
-            element.style.transform = `rotate(${rotation}deg)`;
+            // Limita o progresso entre 0 e 1
+            progress = Math.max(0, Math.min(1, progress));
+    
+            // Mantém a rotação em 0deg dentro da zona neutra
+            if (progress > neutralZone && progress < 1 - neutralZone) {
+              element.style.transform = `rotate(0deg)`;
+            } else {
+              // Fora da zona neutra, aplica rotação proporcional ao progresso
+              const rotation = initialRotation * (1 - Math.pow(progress - 0.5, 2) * 4);
+              element.style.transform = `rotate(${rotation}deg)`;
+            }
           } else if (rect.bottom < 0 || rect.top > window.innerHeight) {
             // Fora da tela, reseta a rotação
             //element.style.transform = `rotate(0deg)`;
@@ -279,6 +287,7 @@
         });
       });
     </script>
+    
     
     
 
